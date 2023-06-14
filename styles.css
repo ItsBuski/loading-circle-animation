@@ -1,12 +1,16 @@
+/*
+    Mantiene todo en el centro de la pantalla.
+*/
 * {
-
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
 
+/*
+    Mantiene todo en el centro de la pantalla.
+*/
 body {
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,6 +18,10 @@ body {
     background-color: #151515;
 }
 
+/*
+    Texto "loading" en el centro, con letras siempre mayúsculas.
+    Se el aplica una animación de cambio de color.
+*/
 .loading {
     
     text-align: center;
@@ -25,6 +33,9 @@ body {
     font-family: 'Orbitron', sans-serif;
 }
 
+/*
+    Circulo exterior rojo, se le aplica una animación ease-in-out.
+*/
 .circle1 {
 
     display: flex;
@@ -38,6 +49,9 @@ body {
     animation: ani 2s ease-in-out infinite;
 }
 
+/*
+    Circulo interior amarillo, se le aplica una animación ease-in-out.
+*/
 .circle2 {
 
     width: 230px;
@@ -47,6 +61,9 @@ body {
     border-bottom: 7px solid #f9ce24;
 }
 
+/*
+    Rota las cajas modificadas, que serían las líneas de los circulos.
+*/
 @keyframes ani {
 
     0%{
@@ -57,6 +74,9 @@ body {
     }
 }
 
+/*
+    Cambia el color de las letras del "loading" del centro.
+*/
 @keyframes load {
 
     0%{
